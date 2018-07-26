@@ -88,3 +88,15 @@ body {
     width: 100%
    
 }
+
+.portfolioimg {
+    width: 30%;
+}
+
+#contactform {
+
+}
+
+#contactform input {
+    width:100%;
+}
