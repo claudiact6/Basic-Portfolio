@@ -1,22 +1,30 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Claudia Taylor | Portfolio</title>
-        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    </head>
-    <body>
-        <div class="header">
-            <div class="innerheader">
-                <h1 class="name">Claudia Taylor</h1>
-                <div class="menucontainer">
-                    <ul class="menu">
-                        <li><a href="index.html">About&nbsp;&nbsp;&nbsp;|</a></li>
-                        <li><a href="portfolio.html">&nbsp;&nbsp;&nbsp;Portfolio&nbsp;&nbsp;&nbsp;|</a></li>
-                        <li><a href="contact.html">&nbsp;&nbsp;&nbsp;Contact</a></li>
-                    </ul>
-                </div>
+<html lang="en">
+
+<head>
+    <title>Claudia Taylor | Portfolio</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="innerheader">
+            <h1 class="name">Claudia Taylor</h1>
+            <div class="menucontainer">
+                <ul class="menu">
+                    <li>
+                        <a href="index.html">&nbsp;About&nbsp;</a>&nbsp;&nbsp;|</li>
+                    <li>&nbsp;&nbsp;
+                        <a href="portfolio.html">&nbsp;Portfolio&nbsp;</a>&nbsp;&nbsp;|</li>
+                    <li>&nbsp;&nbsp;
+                        <a href="contact.html">&nbsp;Contact&nbsp;</a>
+                    </li>
+                </ul>
             </div>
         </div>
+    </header>
+    <div class="maincontainer">
         <div class="main">
             <h2>Contact</h2>
             <hr />
@@ -26,12 +34,15 @@
                 <p>Email</p>
                 <input name="email" type="email">
                 <p>Message</p>
-                <input name="name" type="text">
+                <input name="name" type="textarea" class="contactmessage">
+                <button type="submit">Submit</button>
             </form>
-                      
+
         </div>
-        <div class="footer">
-            <p>Copyright</p>
-        </div>
-    </body>
+    </div>
+    <footer>
+        <p>Copyright</p>
+    </footer>
+</body>
+
 </html>

@@ -25,10 +25,20 @@ header {
     float: left;
     margin: 0px 0px 20px 0px;
     padding: 0px;
-    background-color: #ffffff;
+    background: #ffffff;
     border: solid #cccccc;
     border-width: 0px 0px 2px 0px;
     width: 100%;
+}
+
+hr { 
+    display: block;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
 }
 
 .innerheader {
@@ -40,7 +50,7 @@ header {
 
 .name {
     margin: 0px;
-    background-color: #4aaaa5;
+    background: #4aaaa5;
     padding: 20px 20px 20px 20px;
     text-align: center;
     width: 200px;
@@ -66,10 +76,11 @@ header {
     text-decoration: none;
     color: #777777;
     padding: 5px;
+    transition: background-color .5s;
 }
 
 .menu a:hover {
-    background-color: #4aaaa5;
+    background: #4aaaa5;
 }
 
 .maincontainer {
@@ -77,12 +88,14 @@ header {
 }
 
 .main {
-    width:920px;
-    background-color: #ffffff;
+    width:960px;
+    background: #ffffff;
     margin: 0 auto;
     clear: both;
     padding: 20px;
     border: 2px solid #dddddd;
+    overflow: auto;
+
 }
 
 #profilepic {
@@ -101,14 +114,52 @@ footer {
     width: 100%
 }
 
-.portfolioimg {
-    width: 30%;
+.left2col {
+    width: 33.33333%;
+    float: left;
+    overflow: auto;
 }
 
-#contactform {
+.porfolioimgcontain {
+    float: left;
+    position: relative;
+    width: 275px;
+    margin: 10px, 10px, 50px, 10px;
+    display: block;
+}
 
+.portfolioimgcontain:hover .portfoliotext {
+    opacity: 0;
+}
+
+.portfolioimg {
+    width: 275px;
+    position: relative;
+    z-index: 0;
+}
+
+.portfoliotext {
+    background: #4aaaa5;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    color: white;
+    position: relative;
+    z-index: 1;
+    height: 50px;
+    width: 275px;
+    bottom: 60px;
+    text-align: center;
+    transition: opacity .5s;
 }
 
 #contactform input {
     width:100%;
+}
+
+.contactmessage {
+    height: 150px;
+}
+
+button {
+    background: #4aaaa5;
+    color: white;
 }
