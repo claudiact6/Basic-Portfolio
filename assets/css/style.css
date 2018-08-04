@@ -1,9 +1,10 @@
 h1,h2,h3,h4,h5,h6 {
     font-family: 'Georgia', Times, Times New Roman, serif;
+    line-height: 2;
 }
 
 h1 {
-    color:white;
+    color: white;
 }
 
 h2 {
@@ -21,10 +22,13 @@ body {
     height: 100vh;
 }
 
+p {
+    line-height: 2;
+}
+
 header {
     float: left;
-    margin: 0px 0px 20px 0px;
-    padding: 0px;
+    margin: 0px 0px 35px 0px;
     background: #ffffff;
     border: solid #cccccc;
     border-width: 0px 0px 2px 0px;
@@ -33,38 +37,32 @@ header {
 
 hr { 
     display: block;
-    margin-top: 1.5em;
+    margin-top: 1em;
     margin-bottom: 1.5em;
     margin-left: auto;
     margin-right: auto;
-    border-style: inset;
-    border-width: 1px;
+    border: 1px solid #dddddd;
 }
 
 .innerheader {
-    margin: 0px;
-    padding: 0px;
+    padding: 0px 0px 20px 0px;
     width:960px;
     margin: 0 auto;
 }
 
 .name {
-    margin: 0px;
     background: #4aaaa5;
-    padding: 20px 20px 20px 20px;
+    padding: 10px 20px;
     text-align: center;
-    width: 200px;
     float: left;
 }
 
 .menucontainer {
-    padding-top: 50px;
+    padding-top: 28px;
 }
 
 .menu {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
     float: right;
 }
 
@@ -88,9 +86,10 @@ hr {
 }
 
 .main {
-    width:960px;
+    width:916px;
     background: #ffffff;
     margin: 0 auto;
+    margin-bottom: 35px;
     clear: both;
     padding: 20px;
     border: 2px solid #dddddd;
@@ -99,9 +98,10 @@ hr {
 }
 
 #profilepic {
-    float: left;
     height: 200px;
-    margin: 0px 20px 20px 0px;
+    margin: 8px 20px 0px 0px;
+    float: left;
+    vertical-align:text-top;
 }
 
 footer {
@@ -132,10 +132,16 @@ footer {
     opacity: 0;
 }
 
+.portfolioimgcontain:hover .portfolioimg {
+    filter: none;
+}
+
 .portfolioimg {
     width: 275px;
     position: relative;
     z-index: 0;
+    filter: grayscale();
+    transition: filter .5s;
 }
 
 .portfoliotext {
@@ -152,14 +158,25 @@ footer {
 }
 
 #contactform input {
-    width:100%;
+    width: 906px;
+    padding: 5px;
+    margin-bottom: 10px;
+    font-size: 12px;
 }
 
-.contactmessage {
-    height: 150px;
+#contactform textarea {
+    width: 906px;
+    padding: 5px;
+    border-color: lightgray;
+    font-size: 12px;
 }
 
 button {
     background: #4aaaa5;
     color: white;
+    line-height: 2;
+    padding: 0px 15px;
+    margin-top: 10px;
+    border: none;
+    font-size: 16px;
 }

@@ -14,10 +14,10 @@
             <div class="menucontainer">
                 <ul class="menu">
                     <li>
-                        <a href="index.html">&nbsp;About&nbsp;</a>&nbsp;&nbsp;|</li>
-                    <li>&nbsp;&nbsp;
-                        <a href="portfolio.html">&nbsp;Portfolio&nbsp;</a>&nbsp;&nbsp;|</li>
-                    <li>&nbsp;&nbsp;
+                        <a href="index.html">&nbsp;About&nbsp;</a>&nbsp;&nbsp;|&nbsp;</li>
+                    <li>
+                        <a href="portfolio.html">&nbsp;Portfolio&nbsp;</a>&nbsp;&nbsp;|&nbsp;</li>
+                    <li>
                         <a href="contact.html">&nbsp;Contact&nbsp;</a>
                     </li>
                 </ul>
@@ -28,13 +28,13 @@
         <div class="main">
             <h2>Contact</h2>
             <hr />
-            <form id="contactform">
+            <form id="contactform" action="mailto:taylor.claudia@gmail.com" method="post" enctype="text/plain">
                 <p>Name</p>
-                <input name="name" type="text">
+                <input name="name" type="text" placeholder="Your name">
                 <p>Email</p>
-                <input name="email" type="email">
+                <input name="email" type="email" placeholder="email@email.com">
                 <p>Message</p>
-                <input name="name" type="textarea" class="contactmessage">
+                <textarea name="message" type="textarea" class="contactmessage" rows="8"></textarea>
                 <button type="submit">Submit</button>
             </form>
 
