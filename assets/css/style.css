@@ -150,7 +150,8 @@ footer {
     color: white;
     position: relative;
     z-index: 1;
-    height: 50px;
+    padding-top: 10px;
+    height: 40px;
     width: 275px;
     bottom: 60px;
     text-align: center;
